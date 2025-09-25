@@ -12,6 +12,9 @@ dependencies = [
     "requests-kerberos>=0.15.0",
 ]
 
+[project.scripts]
+highspot-mcp = "main:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 
