@@ -1,0 +1,20 @@
+[project]
+name = "highspot-mcp"
+version = "0.1.0"
+description = "The MCP server to access public data on AWS Highspot"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "beautifulsoup4>=4.13.5",
+    "browser-cookie3>=0.20.1",
+    "mcp[cli]>=1.14.1",
+    "requests>=2.32.5",
+    "requests-kerberos>=0.15.0",
+]
+
+[project.scripts]
+highspot-mcp = "main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

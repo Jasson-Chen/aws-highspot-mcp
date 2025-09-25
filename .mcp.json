@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "test_server": {
+      "command": "uv",
+      "args": ["run", "test_server.py"],
+      "transport": "stdio"
+    },
+    "highspot_mcp": {
+      "command": "uv",
+      "args": ["run", "main.py"],
+      "transport": "stdio"
+    }
+  }
+}
